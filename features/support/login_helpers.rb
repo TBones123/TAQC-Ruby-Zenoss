@@ -18,6 +18,19 @@ module LoginHelper
     @inf_page = InfPage.new
     @inf_page.load
   end
+
+  def choise_device
+    begin
+      @inf_page.devise_table.trs[2].link1.click
+      rescue Selenium::WebDriver::Error::StaleElementReferenceError
+        retry
+    end
+  end
+
+
+
+
+
 end
 
 World(LoginHelper)
