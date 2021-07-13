@@ -6,5 +6,5 @@ class ComponentleftbarSection < SitePrism::Section
   class ComponentSection < SitePrism::Section
     element :td_element, 'td'
   end
-  sections :graphs, ComponentSection, 'table.x-grid-table tr'
+  sections :component_tr, ComponentSection, 'table.x-grid-table tr'
 end
