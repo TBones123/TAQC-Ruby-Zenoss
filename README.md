@@ -1,1 +1,0 @@
-# TAQC-Ruby-Zenoss
